@@ -109,11 +109,11 @@ make new abc300
 # 問題ディレクトリへ移動
 cd contests/abc300/a
 
-# テンプレートをコピー（デフォルトはC++）
+# テンプレートをコピー（デフォルトはPython）
 make template
 
-# Pythonを使う場合
-make template python
+# C++を使う場合
+make template cpp
 
 # コーディング
 # エディタが自動的に開くか、手動で編集
@@ -146,8 +146,8 @@ make submit
 
 ## 対応言語
 
-- **C++20** (デフォルト)
-- **Python** (PyPy 3.10)
+- **Python** (PyPy 3.10) (デフォルト)
+- **C++20**
 
 ## プロジェクト構造
 

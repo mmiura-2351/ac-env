@@ -9,7 +9,7 @@ PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 source "$SCRIPT_DIR/lib/config-loader.sh"
 
 # デフォルト言語
-DEFAULT_LANG=$(get_config "default_language" "cpp")
+DEFAULT_LANG=$(get_config "default_language" "python")
 LANG="${1:-$DEFAULT_LANG}"
 
 # 言語サポートチェック

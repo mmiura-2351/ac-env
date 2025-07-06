@@ -152,7 +152,7 @@ main() {
         echo -e "${YELLOW}設定ファイルが見つかりません。デフォルト設定を作成中...${NC}"
         cat > "$CONFIG_FILE" << 'EOF'
 {
-  "default_language": "cpp",
+  "default_language": "python",
   "default_template_dir": "templates",
   "test_timeout": 2000,
   "parallel_tests": false,

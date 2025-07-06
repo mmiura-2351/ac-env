@@ -154,6 +154,7 @@ bin/
 # プロジェクト固有
 # ==================================================
 # 個人設定（ユーザー固有の設定は除外）
+config.json
 config.local.json
 .env.local
 .env
@@ -167,8 +168,10 @@ coverage/
 # Note: 提出履歴は通常ホームディレクトリ（~/.ac-env/submissions/）に保存される
 
 # 競技プログラミング固有
-# コンテストの解答ファイルは含める（main.cpp, main.py等）
-# ただし、以下は除外：
+# コンテストディレクトリは個人的な作業ファイルのため除外
+contests/
+
+# 競技プログラミング固有の一時ファイル
 contests/**/output
 contests/**/debug
 contests/**/.debug
@@ -195,13 +198,11 @@ yarn.lock
 # 除外しないファイル（明示的に含める）
 # ==================================================
 # 重要な設定ファイルは除外しない
-!config.json
 !Makefile
 !README.md
 
-# テンプレートファイルは含める
-!templates/
-!templates/**/*
+# テンプレートディレクトリは個人的な作業ファイルのため除外
+templates/
 
 # スクリプトファイルは含める
 !scripts/

@@ -124,7 +124,7 @@ generate_config_file() {
     # 設定ファイル生成
     cat > "$CONFIG_FILE" << EOF
 {
-  "default_language": "cpp",
+  "default_language": "python",
   "supported_languages": {
 $(generate_language_config "$python_cmd" "$cpp_flags")
   },

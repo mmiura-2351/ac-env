@@ -70,7 +70,7 @@ expand_path() {
 # サポートされている言語のリストを取得
 get_supported_languages() {
     if [ ! -f "$CONFIG_FILE" ] || ! command -v jq &> /dev/null; then
-        echo "cpp python"
+        echo "python cpp"
         return
     fi
     
@@ -157,7 +157,7 @@ find_main_file() {
     
     # デフォルト言語を試す
     local default_lang
-    default_lang=$(get_config "default_language" "cpp")
+    default_lang=$(get_config "default_language" "python")
     if is_language_supported "$default_lang"; then
         local main_file
         main_file=$(get_language_config "$default_lang" "main_file")
